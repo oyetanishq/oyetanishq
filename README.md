@@ -3,10 +3,11 @@
 ```py
 
 class Personal_Stuff:
-    age = 19.4005155968
+    age = 19.8905155968
     college = "IIT VARANASI"
     hobbies = ["listening to songs", "painting"]
-    interests = ["Web Development", "DSA", "Open Source"]
+    spotify_rapped = "52K Minutes Y24"
+    interests = ["Web Development", "Deep Learning", "Open Source"]
     sports = {
         "lawn tennis": "represented house and won 1st place in school",
         "swimming": "hobby"
