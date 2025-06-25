@@ -34,6 +34,10 @@
 
 @theme {
     --font-ubuntu: "ubuntu", "sans-serif";
+
+    --color-beige-dark: #f5ecd5;
+    --color-teal: #578e7e;
+    --color-dark: #3d3d3d;
 }
 
 html,
@@ -42,4 +46,6 @@ body {
     padding: 0;
 
     letter-spacing: -0.025em;
+
+    @apply font-ubuntu;
 }

@@ -1,13 +1,9 @@
-import { useScramble } from "use-scramble";
+import NavBar from "@/components/navbar";
 
 export default function Minimal() {
-    const { ref, replay } = useScramble({
-        text: "tanishq singh",
-    });
-
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center gap-4 p-8">
-            <h1 onMouseOver={replay} onFocus={replay} className="text-xs font-ubuntu" ref={ref} />
+        <div className="min-h-dvh flex flex-col justify-start items-center gap-4 py-6 px-5 md:p-8 bg-gray-50">
+            <NavBar />
         </div>
     );
 }
