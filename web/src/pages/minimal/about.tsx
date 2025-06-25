@@ -26,7 +26,7 @@ export default function About() {
                     He has more than 3 years of experience in building robust web application, including automated deployment pipelines using github actions, and docker. And more than 52K minutes in spotify wrapped last year, He has recently started with machine & deep learning,
                     He has actively participated in hackathons and contributed to open-source.
                 </p>
-                <p className="text-sm sm:text-[15px] about-paragraph">Some technologies he is confident in react, typescript, node, golang, sql, docker, ci/cd workflows, cpp, and tailwindcss.</p>
+                <p className="text-sm sm:text-[15px] about-paragraph">Some technologies he is confident in react, typescript, node, golang, sql, docker, cpp, tailwindcss, and ci/cd workflows. Please show him some grass.</p>
             </div>
             <div className="sm:flex sm:gap-1">
                 <p className="text-sm sm:text-[15px]">You can follow him on</p>
