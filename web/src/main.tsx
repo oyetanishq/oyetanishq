@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import "./global.css";
 
 import { BrowserRouter, Routes, Route } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
 
-// gsap 
+// gsap
 import gsap from "gsap";
 import { SplitText, ScrollTrigger } from "gsap/all";
 
@@ -25,6 +26,8 @@ import NotFound from "@/pages/not-found";
 const App = () => {
     return (
         <StrictMode>
+            <Analytics />
+
             <BrowserRouter>
                 <Routes>
                     {/* home route - which decide which theme user should go */}
