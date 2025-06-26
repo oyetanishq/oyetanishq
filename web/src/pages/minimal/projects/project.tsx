@@ -10,7 +10,7 @@ export interface Content {
     date: Date;
     links: {
         code: { name: string; link: string };
-        live: { name: string; link: string };
+        live?: { name: string; link: string };
     };
     image: {
         src: string;
@@ -23,7 +23,7 @@ interface ProjectProps extends RefAttributes<HTMLDivElement> {
 }
 
 export default function Project({ content, ...rest }: ProjectProps) {
-    const { ref: inViewRef, inView } = useInView({ triggerOnce: false, threshold: 0.6 });
+    const { ref: inViewRef, inView } = useInView({ triggerOnce: true, threshold: 0.6 });
 
     const { ref: titleRef, replay: titleReplay } = useScramble({ text: content.title, speed: inView ? 1 : 0 });
     const { ref: technologiesRef, replay: technologiesReplay } = useScramble({ text: content.technologies, speed: inView ? 1 : 0 });
@@ -36,18 +36,18 @@ export default function Project({ content, ...rest }: ProjectProps) {
     }, [inView]);
 
     return (
-        <div {...rest} className="w-full h-max flex flex-col justify-start items-start border p-3.5 gap-3.5 group col-span-1">
+        <div {...rest} className="w-full h-max flex flex-col justify-start items-start border p-3.5 gap-3.5 group col-span-1 min-h-[460px]">
             <div className="w-full flex justify-between items-center">
                 <span className="text-xs uppercase">{content.date.toLocaleString("en-US", { month: "long", year: "numeric" })}</span>
                 <div className="flex gap-2">
+                    {content.links.live && <LinkText target="_blank" rel="noreferrer" to={content.links.live.link} text={content.links.live.name} className="text-xs uppercase border px-1.5 rounded-full cursor-pointer duration-300 active:bg-transparent hover:bg-yellow-200" />}
                     <LinkText target="_blank" rel="noreferrer" to={content.links.code.link} text={content.links.code.name} className="text-xs uppercase border px-1.5 rounded-full cursor-pointer duration-300 active:bg-transparent hover:bg-yellow-200" />
-                    <LinkText target="_blank" rel="noreferrer" to={content.links.live.link} text={content.links.live.name} className="text-xs uppercase border px-1.5 rounded-full cursor-pointer duration-300 active:bg-transparent hover:bg-yellow-200" />
                 </div>
             </div>
             <img src={content.image.src} alt={content.image.alt} className="w-full grayscale duration-300 group-hover:filter-none aspect-video object-cover" />
-            <div ref={inViewRef} className="w-full flex flex-col">
+            <div ref={inViewRef} className="w-full flex flex-col flex-1">
                 <div className="w-full flex justify-between items-end">
-                    <span className="uppercase font-semibold" ref={titleRef} />
+                    <span className="uppercase font-semibold group-hover:text-pink-700 duration-300" ref={titleRef} />
                 </div>
                 <span className="text-sm description">{content.description}</span>
             </div>
