@@ -44,10 +44,10 @@ export default function Project({ content, ...rest }: ProjectProps) {
                     <LinkText target="_blank" rel="noreferrer" to={content.links.code.link} text={content.links.code.name} className="text-xs uppercase border px-1.5 rounded-full cursor-pointer duration-300 active:bg-transparent hover:bg-yellow-200" />
                 </div>
             </div>
-            <img src={content.image.src} alt={content.image.alt} className="w-full grayscale duration-300 group-hover:filter-none aspect-video object-cover" />
+            <img src={content.image.src} alt={content.image.alt} className="w-full grayscale duration-300 group-hover:filter-none group-active:filter-none aspect-video object-cover" />
             <div ref={inViewRef} className="w-full flex flex-col flex-1">
                 <div className="w-full flex justify-between items-end">
-                    <span className="uppercase font-semibold group-hover:text-pink-700 duration-300" ref={titleRef} />
+                    <span className="uppercase font-semibold group-hover:text-pink-700 group-active:text-pink-700 duration-300" ref={titleRef} />
                 </div>
                 <span className="text-sm description">{content.description}</span>
             </div>
