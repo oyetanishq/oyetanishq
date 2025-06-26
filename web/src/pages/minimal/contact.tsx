@@ -44,7 +44,7 @@ export default function Contact() {
         <div className="w-full flex-1 flex flex-col items-start justify-start mt-6 gap-4">
             <div className="w-full flex justify-between items-end max-w-2xl">
                 <span className="text-xl sm:text-2xl uppercase" ref={contactRef} />
-                <LinkText to="mailto:hello@tanishqsingh.com" target="_blank" rel="noreferrer" text="hello@tanishqsingh.com" className="text-xs sm:text-sm duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />
+                <LinkText to="mailto:hello@tanishqsingh.com" target="_blank" rel="noreferrer" title="tanishq singh's email" text="hello@tanishqsingh.com" className="text-xs sm:text-sm duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />
             </div>
             <form onSubmit={handleFormSubmit} className="w-full max-w-2xl flex flex-1 flex-col justify-start items-start gap-3 sm:mt-6">
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} min={3} max={30} required id="email" placeholder="what's your email?" className="w-full text-sm outline-none p-3 border border-gray-500" />

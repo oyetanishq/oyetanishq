@@ -36,7 +36,7 @@ export default function Project({ content, ...rest }: ProjectProps) {
     }, [inView]);
 
     return (
-        <div {...rest} className="w-full h-max flex flex-col justify-start items-start border p-3.5 gap-3.5 group col-span-1 min-h-[460px]">
+        <div {...rest} className="w-full h-max flex flex-col justify-start items-start border p-3.5 gap-3.5 group col-span-1 min-h-[460px] duration-300 hover:bg-orange-50/80 active:bg-orange-50/80">
             <div className="w-full flex justify-between items-center">
                 <span className="text-xs uppercase">{content.date.toLocaleString("en-US", { month: "long", year: "numeric" })}</span>
                 <div className="flex gap-2">
