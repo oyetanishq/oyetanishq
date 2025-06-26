@@ -9,7 +9,7 @@ export default function NotFound() {
                 <h1 className="text-4xl">Oops!</h1>
                 <h3 className="text-xl text-gray-800">We couldn't find what you are looking for</h3>
 
-                <LinkText href="/" text="go back." className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />
+                <LinkText to="/" text="go back." className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />
             </div>
         </div>
     );
