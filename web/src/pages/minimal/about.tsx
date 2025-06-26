@@ -31,13 +31,13 @@ export default function About() {
             <div className="sm:flex sm:gap-1">
                 <p className="text-sm sm:text-[15px]">You can follow him on</p>
                 <p className="text-sm sm:text-[15px]">
-                    github: <LinkText playOnMount={false} to="https://github.com/oyetanishq" target="_blank" rel="noreferrer" text="@oyetanishq" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />,
+                    github: <LinkText to="https://github.com/oyetanishq" target="_blank" rel="noreferrer" text="@oyetanishq" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />,
                 </p>
                 <p className="text-sm sm:text-[15px]">
-                    linkedin: <LinkText playOnMount={false} to="https://www.linkedin.com/in/oyetanishq" target="_blank" rel="noreferrer" text="@oyetanishq" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />, or
+                    linkedin: <LinkText to="https://www.linkedin.com/in/oyetanishq" target="_blank" rel="noreferrer" text="@oyetanishq" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />, or
                 </p>
                 <p className="text-sm sm:text-[15px]">
-                    send a email at <LinkText playOnMount={false} to="mailto:hello@tanishqsingh.com" target="_blank" rel="noreferrer" text="hello@tanishqsingh.com" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />.
+                    send a email at <LinkText to="mailto:hello@tanishqsingh.com" target="_blank" rel="noreferrer" text="hello@tanishqsingh.com" className="duration-300 underline -underline-offset-1 hover:underline-offset-2 text-pink-700" />.
                 </p>
             </div>
         </div>
