@@ -17,3 +17,7 @@ class Personal_Stuff:
 ```
 
 ![](https://komarev.com/ghpvc/?username=oyetanishq&style=for-the-badge)
+
+---
+
+visit my folio: [tanishqsingh.com](https://tanishqsingh.com)
