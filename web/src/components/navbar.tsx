@@ -2,7 +2,7 @@ import LinkText from "@/components/ui/link-text";
 
 export default function NavBar() {
     return (
-        <header className="w-full">
+        <header className="w-full z-10">
             <nav className="flex justify-between items-start">
                 <div className="flex flex-col items-start sm:items-center justify-center">
                     <LinkText to="/" title="tanishq singh portfolio" text="tanishq singh" className="text-2xl sm:text-3xl text-dark cursor-pointer" />

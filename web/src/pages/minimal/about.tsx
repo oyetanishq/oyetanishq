@@ -17,7 +17,7 @@ export default function About() {
     }, []);
 
     return (
-        <div className="w-full flex flex-1 flex-col items-start justify-start sm:pt-16 pt-3">
+        <div className="w-full flex flex-1 flex-col items-start justify-start sm:pt-16 pt-3 z-10">
             <div className="max-w-2xl flex-1 flex flex-col gap-6 justify-end sm:justify-start mb-12">
                 <p className="text-sm sm:text-[15px] about-paragraph">
                     HELLO, I'm <b>Tanishq Singh</b> a sophomore student at <i>Indian Institute of Technology Varanasi</i>, I'm a versatile developer skilled in full-stack development, ml/dl, and DevOps.
