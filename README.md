@@ -3,7 +3,7 @@
 ```py
 
 class Personal_Stuff:
-    age = 19.8905155968
+    age = 20.0105155968
     college = "IIT VARANASI"
     hobbies = ["listening to songs", "painting"]
     spotify_rapped = "52K Minutes Y24"
