@@ -5,6 +5,7 @@ import cat_dog_image from "/images/projects/cat-dog.png";
 import ciphering_image from "/images/projects/ciphering.png";
 import hackpad_image from "/images/projects/hackpad.png";
 import nodus_image from "/images/projects/nodus.png";
+import deepdreamer_image from "/images/projects/deepdreamer.png";
 import readme_chess_image from "/images/projects/readme-chess.png";
 import sql_in_web_image from "/images/projects/sql-in-web.png";
 import tetris_image from "/images/projects/tetris.png";
@@ -13,6 +14,26 @@ import mazex_image from "/images/projects/mazex.jpg";
 import nanojs_image from "/images/projects/nanojs.png";
 
 export const projects: Content[] = [
+    {
+        title: "deepdreamer",
+        description: "A stock analysis and trading simulator, letting you backtest custom strategies and track markets risk-free.",
+        technologies: "react, aws api gateway, lambda, dybamodb, monaco, sam, tailwindcss, typescript.",
+        date: new Date(2025, 10),
+        links: {
+            code: {
+                name: "code",
+                link: "https://github.com/oyetanishq/deepdreamer",
+            },
+            live: {
+                name: "live",
+                link: "https://deepdreamer.tanishqsingh.com",
+            },
+        },
+        image: {
+            src: deepdreamer_image,
+            alt: "this is the working demo of deepdreamer, a algorithmic trading app.",
+        },
+    },
     {
         title: "nodus",
         description: "A simple webrtc based peer to peer video conferencing and file sharing app, with unlimited file size and no server storage.",
@@ -55,7 +76,8 @@ export const projects: Content[] = [
     },
     {
         title: "sql in web",
-        description: "Browser based sql editor with syntax highlighting, auto completion, and a simple interface to run and store multiple sql queries on a sqlite database locally. Whole webapp is loaded under 1MB, and works on any device.",
+        description:
+            "Browser based sql editor with syntax highlighting, auto completion, and a simple interface to run and store multiple sql queries on a sqlite database locally. Whole webapp is loaded under 1MB, and works on any device.",
         technologies: "react, sqlite, react-simple-code-editor, prismjs, tailwindcss, typescript.",
         date: new Date(2025, 3),
         links: {
@@ -75,7 +97,8 @@ export const projects: Content[] = [
     },
     {
         title: "browser linux",
-        description: "Serverless linux environment running fully in client side, you can create file/folders, run commands, execute bash scripts, and more. Can instantly be resumed on page reload because of state preservation in broser storage every 10SEC.",
+        description:
+            "Serverless linux environment running fully in client side, you can create file/folders, run commands, execute bash scripts, and more. Can instantly be resumed on page reload because of state preservation in broser storage every 10SEC.",
         technologies: "react, copy/v86, xtermjs, tailwindcss, typescript.",
         date: new Date(2024, 11),
         links: {
@@ -115,7 +138,8 @@ export const projects: Content[] = [
     },
     {
         title: "readme chess",
-        description: "A chess game that can be played in the readme of a github repository, when you create a issue it triggers a github action that updates the readme with the current state of the game, stockfish is our opponent.",
+        description:
+            "A chess game that can be played in the readme of a github repository, when you create a issue it triggers a github action that updates the readme with the current state of the game, stockfish is our opponent.",
         technologies: "ci/cd workflow, python, jq, bash scripting.",
         date: new Date(2024, 7),
         links: {
@@ -155,7 +179,8 @@ export const projects: Content[] = [
     },
     {
         title: "nanojs",
-        description: "A secure library to manage nano currency, with features like handling accounts, transactions, wallet, conversion, and blocks. It is built on top of the nano protocol and provides a simple interface to interact with the nano network.",
+        description:
+            "A secure library to manage nano currency, with features like handling accounts, transactions, wallet, conversion, and blocks. It is built on top of the nano protocol and provides a simple interface to interact with the nano network.",
         technologies: "typescript, deno, nano.",
         date: new Date(2023, 1),
         links: {
@@ -175,7 +200,8 @@ export const projects: Content[] = [
     },
     {
         title: "800kebaklol (mazex IIT BHU'24)",
-        description: "This robot is designed to naviagate through a maze autonomously using IR while avoiding any obstacles in path using ultrasonic sensors. After reaching the end, it returns to the starting point with shortest route. This made under 5 in more than 120 teams.",
+        description:
+            "This robot is designed to naviagate through a maze autonomously using IR while avoiding any obstacles in path using ultrasonic sensors. After reaching the end, it returns to the starting point with shortest route. This made under 5 in more than 120 teams.",
         technologies: "cpp, ir sensor, ultrasonic sensor, motor driver, arduino.",
         date: new Date(2024, 10),
         links: {
